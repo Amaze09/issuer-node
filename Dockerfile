@@ -30,6 +30,3 @@ RUN mv /service/bin/* /service/
 RUN rm -R /usr/local/go
 RUN rm -R /service/bin
 RUN rm ./go1.19.linux-amd64.tar.gz
-RUN make db/migrate
-RUN ./bin/platform
-RUN ./bin/pending_publisher
